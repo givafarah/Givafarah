@@ -1,16 +1,25 @@
-## Hi there 👋
+# Muhamad Wahid - Portfolio Website
 
-<!--
-**givafarah/Givafarah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Website portfolio pribadi yang menampilkan profil, skill, dan project yang telah saya kerjakan sebagai Web Developer.
 
-Here are some ideas to get you started:
+## 🚀 Tentang Saya
+Saya adalah seorang Web Developer yang fokus pada pembuatan website modern, responsive, dan user-friendly.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Teknologi yang Digunakan
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
+- Netlify
+
+## 📂 Fitur Website
+- Hero Section
+- Tentang Saya
+- Daftar Project
+- Kontak (WhatsApp)
+
+## 🌐 Live Demo
+Website ini di-deploy menggunakan Netlify.
+
+## 👨‍💻 Author
+Muhamad Wahid
