@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Muhamad Wahid | Jasa Website Profesional</title>
+<meta name="description" content="Jasa pembuatan website profesional untuk UMKM dan bisnis lokal. Landing page, company profile, dan maintenance website.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-body{font-family:'Segoe UI',sans-serif;background:#0f172a;color:#fff;}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:#fff;overflow-x:hidden;}
 
 nav{
 position:fixed;width:100%;top:0;
-background:rgba(0,0,0,0.6);
+background:rgba(15,23,42,0.8);
+backdrop-filter:blur(10px);
 padding:15px 40px;
 display:flex;justify-content:space-between;
 z-index:1000;
@@ -21,44 +26,93 @@ nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px;}
 nav a:hover{color:#38bdf8;}
 
 .hero{
-height:100vh;display:flex;
-justify-content:center;align-items:center;
-flex-direction:column;text-align:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
 background:linear-gradient(135deg,#1e3a8a,#0f172a);
 padding:20px;
 }
 
-.hero h1{font-size:45px;margin-bottom:15px;}
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+animation:fadeUp 1s ease forwards;
+}
+
 .hero span{color:#38bdf8;}
 
+.hero p{
+max-width:600px;
+opacity:0.8;
+margin-bottom:20px;
+animation:fadeUp 1.5s ease forwards;
+}
+
 .btn{
-padding:12px 25px;background:#38bdf8;
-border:none;border-radius:8px;
-color:#000;font-weight:bold;
-text-decoration:none;display:inline-block;
-margin-top:15px;
+padding:12px 28px;
+background:#38bdf8;
+border:none;
+border-radius:8px;
+color:#000;
+font-weight:bold;
+text-decoration:none;
 transition:0.3s;
 }
 
-.btn:hover{transform:scale(1.05);}
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
 
-section{padding:100px 20px;text-align:center;}
+section{
+padding:120px 20px;
+text-align:center;
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;max-width:1100px;margin:auto;
+gap:30px;
+max-width:1100px;
+margin:auto;
 }
 
 .card{
-background:#1e293b;padding:30px;
-border-radius:15px;
-transition:0.3s;
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-.card:hover{transform:translateY(-10px);}
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
 
-footer{background:#000;text-align:center;padding:25px;font-size:14px;}
+.price{
+color:#38bdf8;
+font-weight:bold;
+margin:10px 0;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
 
 .wa-float{
 position:fixed;
@@ -72,6 +126,11 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
 </style>
 </head>
 
@@ -82,76 +141,79 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3);
 <div>
 <a href="#services">Layanan</a>
 <a href="#portfolio">Portfolio</a>
+<a href="#about">Tentang</a>
 <a href="#contact">Kontak</a>
 </div>
 </nav>
 
 <section class="hero">
-<h1>Saya <span>Muhamad Wahid</span></h1>
-<p>Web Developer untuk UMKM & bisnis lokal.</p>
+<h1>Website Profesional untuk <span>UMKM & Bisnis Lokal</span></h1>
+<p>Meningkatkan kepercayaan dan penjualan bisnis Anda dengan website modern & responsif.</p>
 <a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20buat%20website" class="btn" target="_blank">
-Konsultasi WhatsApp
+Konsultasi Gratis
 </a>
 </section>
 
 <section id="services">
 <h2>Layanan</h2>
 <div class="grid">
-
 <div class="card">
 <h3>Landing Page</h3>
 <p>Website 1 halaman fokus konversi.</p>
-<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Landing%20Page" class="btn" target="_blank">Pesan Sekarang</a>
+<div class="price">Mulai 1,2 Juta</div>
 </div>
 
 <div class="card">
 <h3>Website UMKM</h3>
 <p>Company profile profesional.</p>
-<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Website%20UMKM" class="btn" target="_blank">Pesan Sekarang</a>
+<div class="price">Mulai 2 Juta</div>
 </div>
 
 <div class="card">
 <h3>Maintenance</h3>
 <p>Perawatan & update website.</p>
-<a href="https://wa.me/6287847053105?text=Halo%20saya%20ingin%20Maintenance%20Website" class="btn" target="_blank">Pesan Sekarang</a>
+<div class="price">Mulai 300rb/bulan</div>
 </div>
-
 </div>
 </section>
 
 <section id="portfolio">
 <h2>Contoh Project</h2>
 <div class="grid">
-
-<div class="card">
-<h3>Service AC</h3>
-<p>Website jasa service AC profesional.</p>
-<a href="service-ac/" class="btn" target="_blank">Lihat Demo</a>
+<div class="card"><h3>Service AC</h3></div>
+<div class="card"><h3>Cuci Mobil</h3></div>
+<div class="card"><h3>Catering</h3></div>
 </div>
+</section>
 
-<div class="card">
-<h3>Cuci Mobil</h3>
-<p>Website jasa cuci mobil modern.</p>
-<a href="cuci-mobil/" class="btn" target="_blank">Lihat Demo</a>
-</div>
-
-<div class="card">
-<h3>Catering</h3>
-<p>Website promosi catering & paket makanan.</p>
-<a href="catering/" class="btn" target="_blank">Lihat Demo</a>
-</div>
-
-</div>
+<section id="about">
+<h2>Tentang Saya</h2>
+<p style="max-width:700px;margin:auto;">
+Saya Muhamad Wahid, freelance web developer yang membantu UMKM memiliki website profesional dengan desain modern dan harga terjangkau.
+</p>
 </section>
 
 <footer id="contact">
 © 2026 Muhamad Wahid | Freelance Web Developer
 </footer>
 
-<a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20dengan%20jasa%20website" 
+<a href="https://wa.me/6287847053105?text=Halo%20saya%20tertarik%20dengan%20jasa%20website"
 class="wa-float" target="_blank">
 Chat WA
 </a>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const rect = sec.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+</script>
 
 </body>
 </html>
